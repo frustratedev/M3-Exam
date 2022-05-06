@@ -45,7 +45,7 @@ function particles() {
     scene.add(stars);
 }
 
-//Load textures, geometries
+//Insert textures, geometries
 function insertGeometry() {
     //Textures
     const space = new THREE.TextureLoader().load('/Exam/assets/textures/space.jpg');
