@@ -64,13 +64,13 @@ function insertGeometry() {
     planet1.position.set(150,0,0);
     scene.add(planet1);
 
-    const planet2Geometry = new THREE.SphereGeometry(10,10);
+    const planet2Geometry = new THREE.SphereGeometry(10,12);
     const planet2Material = new THREE.MeshStandardMaterial({map:planetTexture});
     planet2 = new THREE.Mesh(planet2Geometry,planet2Material);
     planet2.position.set(90, -5,-130);
     scene.add(planet2);
 
-    const planet3Geometry = new THREE.SphereGeometry(20,32);
+    const planet3Geometry = new THREE.SphereGeometry(20,30);
     const planet3Material = new THREE.MeshStandardMaterial({map:planetTexture});
     planet3 = new THREE.Mesh(planet3Geometry,planet3Material);
     planet3.position.set(-250,150,200);
@@ -85,12 +85,12 @@ function insertGeometry() {
 
 //Insert lighting
 function lighting() {
-    const ambi_light = new THREE.AmbientLight(0x005396,0.5);
-    scene.add(ambi_light);
+    const ambientLighting = new THREE.AmbientLight(0x0B5394,0.5);
+    scene.add(ambientLighting);
 
-    const dir_light = new THREE.DirectionalLight(0xffffff, 2);
-    dir_light.position.set(0,250,250);
-    scene.add(dir_light);
+    const directionalLighting = new THREE.DirectionalLight(0xffffff, 2);
+    directionalLighting.position.set(0,250,250);
+    scene.add(directionalLighting);
 
 }
     camera.position.set(-25, 0,-220);
