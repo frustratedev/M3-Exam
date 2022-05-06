@@ -12,7 +12,7 @@ document.body.appendChild( renderer.domElement );
 const controls = new OrbitControls(camera,renderer.domElement);
 controls.update();
 
-let planet1,planet2,planet3,clouds,stars,galaxy;
+let stars,galaxy,planet1,planet2,planet3,clouds;
 
 particles();
 insertGeometry();
@@ -100,4 +100,4 @@ function lighting() {
         requestAnimationFrame(animate);
         controls.update();
         renderer.render( scene, camera );
-    }
+}
